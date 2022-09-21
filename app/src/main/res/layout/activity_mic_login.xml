@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    <ImageButton
+        android:id="@+id/imgBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txtMail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_edit"
+            android:hint="Nhập Mail sinh viên"/>
+        <EditText
+            android:id="@+id/txtMatKhau365"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:background="@drawable/edittext_edit"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu"/>
+
+        <Button
+            android:id="@+id/btn_micLogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập Office 365"
+            android:textSize="24dp"
+            android:background="@drawable/button_edit"
+            android:textFontWeight="300"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
